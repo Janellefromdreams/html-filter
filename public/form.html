@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Word Filter</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Upload HTML File and Words to Remove</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <label for="htmlFile">Upload HTML file:</label>
+      <input type="file" name="htmlFile" id="htmlFile" accept=".html" required>
+
+      <label for="words">Enter words to filter (comma-separated):</label>
+      <input type="text" name="words" id="words" placeholder="e.g., apple, banana, orange" required>
+
+      <button type="submit">Upload and Process</button>
+    </form>
+  </div>
+</body>
+</html>
